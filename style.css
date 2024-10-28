@@ -1,0 +1,136 @@
+/* Fondo de la página */
+body {
+    background-color: #1f1b24; /* Fondo oscuro para resaltar los colores */
+    color: #f3f3f3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Título principal */
+h1 {
+    font-size: 3em;
+    color: #ff9f1c; /* Naranja intenso */
+    text-shadow: 3px 3px 0 #e71d36, 6px 6px 0 #2ec4b6; /* Efecto de sombra colorido */
+    margin-top: 30px;
+}
+
+/* Subtítulos */
+h2, h3 {
+    color: #ff9f1c;
+    text-shadow: 1px 1px 0 #e71d36;
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo transparente */
+    border-radius: 10px;
+}
+
+/* Estilos de los altares */
+.altar {
+    background-color: #5d576b; /* Fondo oscuro para contraste */
+    border: 2px solid #ff9f1c;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 8px;
+    color: #ffffff;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* Velas */
+.vela {
+    width: 50px;
+    height: 120px;
+    background-color: #fff5e1; /* Color crema */
+    border-radius: 10px;
+    margin: 10px auto;
+    position: relative;
+}
+
+.vela::before {
+    content: '';
+    width: 8px;
+    height: 20px;
+    background-color: #ff9f1c; /* Llama naranja */
+    position: absolute;
+    top: -20px;
+    left: 21px;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #ff9f1c;
+}
+
+/* Flores de cempasúchil */
+.cempasuchil {
+    width: 80px;
+    height: 80px;
+    background-color: #ff9f1c;
+    border-radius: 50%;
+    margin: 10px;
+    display: inline-block;
+    position: relative;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.cempasuchil::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 90px;
+    height: 90px;
+    background-color: #ff9f1c;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+/* Calaveritas */
+.calavera {
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 3px solid #ff9f1c;
+    margin: 20px auto;
+    position: relative;
+}
+
+.calavera::before, .calavera::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #000000;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+}
+
+.calavera::before {
+    left: 30px; /* Ojo izquierdo */
+}
+
+.calavera::after {
+    right: 30px; /* Ojo derecho */
+}
+
+/* Botón estilo papel picado */
+.boton-papel-picado {
+    background-color: #e71d36;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton-papel-picado:hover {
+    background-color: #ff9f1c;
+    box-shadow: 0px 0px 10px rgba(255, 159, 28, 0.8);
+}
